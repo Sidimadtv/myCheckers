@@ -224,7 +224,7 @@
                     <section class="inner_item" id="playerA">
                         <h2 style="font-family: 'Chakra Petch', sans-serif;border-radius: 5px;border: 2px solid #a00;" class="only_item">PLAYER 1</h2>
                         <input type="text" maxlength="20" name="offline-form" class="field only_item playerA_name" placeholder="Enter your name" onkeyup="Edit(this)" onfocus="ChangeTextBox(true, this)" onblur="ChangeTextBox(false, this)" required>
-                        <p class="span_rows">Play As:<br><span style="font-family: 'Chakra Petch', sans-serif;border: 2px solid #a00;">Choose the preferred color of your pieces</span></p>
+                        <p class="span_rows">Play As:<br><span style="font-weight: 500;font-family: 'Chakra Petch', sans-serif;text-decoration: #a00 underline;">Choose the preferred color of your pieces</span></p>
                         <button type="button" onclick="Clicked(this, this.parentNode), PlayAs(this)" value="play-as-white" class="default white">WHITE</button>
                         <button type="button" onclick="Clicked(this, this.parentNode), PlayAs(this)" value="play-as-black" class="black">BLACK</button>
                         <button type="button" onclick="Clicked(this, this.parentNode), PlayAs(this)" value="play-as-alternately" class="only_item">ALTERNATELY</button>
@@ -232,9 +232,9 @@
                     <section class="inner_item" id="playerB">
                         <h2 style="font-family: 'Chakra Petch', sans-serif;border-radius: 5px;border: 2px solid #a00;" class="only_item">PLAYER 2</h2>
                         <input type="text" maxlength="20" name="offline-form" class="field only_item playerB_name" placeholder="Enter your name" onkeyup="Edit(this)" onfocus="ChangeTextBox(true, this)" onblur="ChangeTextBox(false, this)" required>
-                        <p class="span_rows">Play as:<br><span style="font-family: 'Chakra Petch', sans-serif;border: 2px solid #a00;">Your pieces color will be as indicated here</span></p>
-                        <button style="font-family: 'Chakra Petch', sans-serif;border-radius: 5px;border: 2px solid #a00;" type="button" class="white">WHITE</button>
-                        <button style="font-family: 'Chakra Petch', sans-serif;border-radius: 5px;border: 2px solid #a00;" type="button" class="default black">BLACK</button>
+                        <p class="span_rows">Play As:<br><span style="font-weight: 500;font-family: 'Chakra Petch', sans-serif;text-decoration: #a00 underline;">Your pieces color will be as indicated here</span></p>
+                        <button style="font-family: 'Chakra Petch', sans-serif !important;border-radius: 5px;border: 2px solid #a00;" type="button" class="white">WHITE</button>
+                        <button style="font-family: 'Chakra Petch', sans-serif !important;border-radius: 5px;border: 2px solid #a00;" type="button" class="default black">BLACK</button>
                     </section>
                     <input style="font-family: 'Chakra Petch', sans-serif;border-radius: 5px;border: 2px solid #a00;" type="submit" id="hidden-submit-button" name="online-form" onclick="Submit(event)" hidden>
                 </form>

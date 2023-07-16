@@ -82,12 +82,12 @@ let srcs = [];
 let soundProps = Object.keys(Sound);
 let imageProps = [...Object.keys(Icons), 
 				    "--english-flag",
-                    "--kenyan-flag",
+                    
                     "--casino-flag", 
                     "--international-flags",
                     "--pool-flag",
                     "--russian-flag",
-                    "--nigerian-flag", 
+                   
                     "--black-piece", 
                     "--white-piece", 
                     "--cancel",

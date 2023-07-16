@@ -241,31 +241,31 @@
                 <form id="online" class="form">
                     <section class="inner_item">
                         <h2 class="only_item">CHANNEL STATUS DETAILS</h2>
-                        <p>Status:<br><span>Your current connection status to the channel</span></p>
+                        <p>Status:<br><span  style="font-weight: 500;font-family: 'Chakra Petch', sans-serif;text-decoration: #a00 underline;">Your current connection status to the channel</span></p>
                         <label class="only_item orange_ui" id="connectivity">NOT CONNECTED</label>
-                        <p>You Are:<br><span>Your current internet connection status</span></p>
+                        <p>You Are:<br><span  style="font-weight: 500;font-family: 'Chakra Petch', sans-serif;text-decoration: #a00 underline;">Your current internet connection status</span></p>
                         <label class="default only_item" id="player-1-status" value="online">ONLINE</label>
-                        <p>Opponent:<br><span>Opponent's current connection status to the channel</span></p>
+                        <p>Opponent:<br><span  style="font-weight: 500;font-family: 'Chakra Petch', sans-serif;text-decoration: #a00 underline;">Opponent's current connection status to the channel</span></p>
                         <label class="only_item black_ui" id="player-2-status" value="N/A">N/A</label>
                     </section>
                     <section class="inner_item">
                         <h2 class="only_item">CHANNEL DETAILS</h2>
                         <input type="text" id="channel-name" name="online-form" class="field only_item" placeholder="Enter name of the channel" onkeyup="Edit(this, true)" onfocus="ChangeTextBox(true, this)" onblur="ChangeTextBox(false, this)" required>
-                        <p>Channel Joined:<br><span>The name of the channel you are connected to</span></p>
+                        <p>Channel Joined:<br><span  style="font-weight: 500;font-family: 'Chakra Petch', sans-serif;text-decoration: #a00 underline;">The name of the channel you are connected to</span></p>
                         <label class="only_item lobby_name black_ui">N/A</label>
-                        <p>Leave Channel:<br><span>Leave the channel you are connected to</span></p>
+                        <p>Leave Channel:<br><span  style="font-weight: 500;font-family: 'Chakra Petch', sans-serif;text-decoration: #a00 underline;">Leave the channel you are connected to</span></p>
                         <button type="button" class="only_item red_ui" onclick="Clicked(), Unsubscribe()">LEAVE</button>
-                        <p>Share Channel:<br><span>Invite your friends to this channel</span></p>
+                        <p>Share Channel:<br><span  style="font-weight: 500;font-family: 'Chakra Petch', sans-serif;text-decoration: #a00 underline;">Invite your friends to this channel</span></p>
                         <button type="button" class="only_item blue_ui" onclick="Clicked(), Share(this)">SHARE</button>
-                        <p>Read FAQS:<br><span>Get more light about channel connection and online gaming.</span></p>
+                        <p>Read FAQS:<br><span  style="font-weight: 500;font-family: 'Chakra Petch', sans-serif;text-decoration: #a00 underline;">Get more light about channel connection and online gaming.</span></p>
                         <button type="button" class="only_item blue_ui" onclick="Clicked(), AboutOnline()">FAQS</button>
                     </section>
                     <section class="inner_item">
                         <h2 class="only_item">PLAYER DETAILS</h2>
                         <input type="text" maxlength="20" name="online-form" class="field only_item playerA_name" placeholder="Enter your name" onkeyup="Edit(this)" onfocus="ChangeTextBox(true, this)" onblur="ChangeTextBox(false, this)" required>
-                        <p>Player 1 Name:<br><span>Your opponent will refer to you using this name</span></p>
+                        <p>Player 1 Name:<br><span  style="font-weight: 500;font-family: 'Chakra Petch', sans-serif;text-decoration: #a00 underline;">Your opponent will refer to you using this name</span></p>
                         <label class="only_item player_name black_ui" value="N/A">N/A</label>
-                        <p>Player 2 Name:<br><span>You will refer to your opponent using this name</span></p>
+                        <p>Player 2 Name:<br><span  style="font-weight: 500;font-family: 'Chakra Petch', sans-serif;text-decoration: #a00 underline;">You will refer to your opponent using this name</span></p>
                         <label class="only_item player_name black_ui" value="N/A">N/A</label>
                     </section>
                     <input type="submit" id="hidden-submit-button" name="online-form" onclick="Submit(event)" hidden>

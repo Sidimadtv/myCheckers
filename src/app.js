@@ -827,7 +827,7 @@ const LoadBoard = async (playerAPieceColor, playerBPieceColor) => {
         Game.state.push([]);
         
         for(let j=0; j < Game.boardSize; j++) {
-            if(Game.version == "american" || Game.version == "kenyan" || Game.version == "casino" || Game.version == "russian" || Game.version == "pool") {
+            if(Game.version == "american" ||  Game.version == "casino" || Game.version == "russian" || Game.version == "pool") {
                 if(j == 0) {
                     ftc = frame[0].children[Game.boardSize-1-i];
                     fbc = frame[2].children[i];
@@ -1077,7 +1077,7 @@ const Refresh = async (restart = false, color = playerA.pieceColor, gameState = 
             $$("#play-window .penalties div")[2].style.display = "none";
             $$("#play-window .penalties div")[3].style.display = "none";
             if(general.orientation.toLowerCase().includes("landscape")) {
-                let versions = ["american", "kenyan", "casino", "international", "pool", "russian", "nigerian"];
+                let versions = ["american", "casino", "international", "pool", "russian"];
                 setTimeout(_ => Notify.popUpAlert({
                         header: Game.version.toUpperCase() + " CHECKERS<br>" + Game.levels[Game.level].level.toUpperCase(), 
                         icon: srcs[Object.keys(Icons).length + versions.indexOf(Game.version)],
@@ -2723,10 +2723,7 @@ const AboutCheckers = () => {
                 message = "American Checkers also known as English/Standard Checkers is played on 8x8 board with each player having 12 pieces at the start of the game. Men (uncrowned pieces) are only allowed to move forwards. When there is multiple capturing sequence, one is expected to choose only one and not necessarily the one that will result in multiple captures. All the captures in the chosen sequence should be made. Kings (crowned pieces) can capture and move both forwards and backwards. However, they can move only one square.";
                 src = srcs[Object.keys(Icons).length];
                 break;
-            case "kenyan":
-                message = "Kenyan Checkers is played on 8x8 board with each player having 12 pieces at the start of the game. Men (uncrowned pieces) can only move and capture forward. In the event of capture, a piece reaches the far end of the board and there are more captures to be made, the piece will continue uncrowned. Kings (crowned pieces) can move and capture both forwards and backwards. However in the event of a capture, a king can jump multiple steps and land only to the immediate square after the captured piece. Incase of multiple captures, one should make sure all the captures in the chosen path are made.";
-                src = srcs[Object.keys(Icons).length + 1];
-                break;
+           
             case "casino":
                 message = "Casino Checkers is a Kenyan checkers game played on 8x8 board with each player having 12 pieces at the start of the game. Men (uncrowned pieces) can only move forward one square. They can however capture two squares both forwards and backwards. In the event of capture, a piece reaches the far end of the board and there are more captures to be made, the piece will continue uncrowned. Kings (crowned pieces) can move and capture both forwards and backwards. However in the event of a capture, a king can jump multiple steps and land only to the immediate square after the captured piece. Incase of multiple captures, one should make sure all the captures in the chosen path are made.";
                 src = srcs[Object.keys(Icons).length + 2];
@@ -2743,10 +2740,7 @@ const AboutCheckers = () => {
                 message = "Russian Checkers is played on 8x8 board with each player having 12 pieces at the start of the game. Men (uncrowned pieces) can only move one square forward. However, they can capture both forwards and backwards. In the event of capture, a piece reaches the far end of the board and there are more captures to be made, the piece is crowned and continues as a king. Kings (crowned pieces) can move and capture multiple steps both forwards and backwards. They are also called flying kings. Incase of multiple captures, you can only choose one that favors your game. However all the captures in the chosen path should be made exclusively.";
                 src = srcs[Object.keys(Icons).length + 5];
                 break;
-            case "nigerian":
-                message = "Nigerian Checkers is similar to international checkers with the difference being, the longest diagonal is align to the right of the players. The game is played on 10x10 board with each player having 20 pieces at the start of the game. Men (uncrowned pieces) can only move one square forward. However they can capture both forwards and backwards. In the event of capture, a piece reaches the far end of the board and there are more captures to be made, the piece will continue uncrowned. Kings (crowned pieces) can move and capture multiple steps both forwards and backwards. They are also called flying kings. Incase of multiple captures, you can only choose one that favors your game. However, all the captures in the chosen path should be made exhaustively.";
-                src = srcs[Object.keys(Icons).length + 6];
-                break;
+           
         }
         
         Notify.alert({

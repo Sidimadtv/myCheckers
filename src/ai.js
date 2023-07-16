@@ -59,12 +59,12 @@ class AI {
                     if(piece.includes("K")) { 
                     	if(Game.version == "american") 
                     		bValue += 10;
-                    	else if(/kenyan|casino/gi.test(Game.version))
+                    	else if(/casino/gi.test(Game.version))
                     		bValue += 15;
                     	else
                         	bValue += 20; 
                         
-                        if(/american|kenyan|casino/gi.test(Game.version)) {
+                        if(/american|casino/gi.test(Game.version)) {
 	                        if(i == Game.boardSize-1 && j == Game.boardSize-2 && state[i-1][j+1] == "EC") 
 	                        	bValue += 1;
 	                        else if(i == Game.boardSize-2 && j == Game.boardSize-1 && state[i+1][j-1] == "EC") 
@@ -86,12 +86,12 @@ class AI {
                     if(piece.includes("K")) { 
                         if(Game.version == "american") 
                     		aValue += 10
-                    	else if(Game.version == "kenyan" || Game.version == "casino") 
+                    	else if( Game.version == "casino") 
                     		aValue += 15;
                     	else
                         	aValue += 20; 
                         
-                        if(/american|kenyan|casino/gi.test(Game.version)) {
+                        if(/american|casino/gi.test(Game.version)) {
 	                        if(i == Game.boardSize-1 && j == Game.boardSize-2 && state[i-1][j+1] == "EC") 
 	                        	aValue += 1;
 	                        else if(i == Game.boardSize-2 && j == Game.boardSize-1 && state[i+1][j-1] == "EC") 
@@ -144,7 +144,7 @@ class AI {
         	--pieces;
         	
         	if(captured.includes("K")) {
-        		value -= /american/gi.test(Game.version)? 1010: /kenyan|casino/gi.test(Game.version)? 1015: 1020;
+        		value -= /american/gi.test(Game.version)? 1010: /casino/gi.test(Game.version)? 1015: 1020;
         	} 
         	else {
         		value -= 1000;
@@ -153,10 +153,10 @@ class AI {
         	this[color].push([value, pieces]);
                 
             state[a][b] = "EC";
-            id = crowned && /^casino|international|nigerian$/gi.test(Game.version)? id.replace("K", "M"): id;
+            id = crowned && /^casino|international$/gi.test(Game.version)? id.replace("K", "M"): id;
             state[m][n] = id;
             
-            if(!crowned || crowned && /^casino|international|nigerian|russian$/gi.test(Game.version)) {
+            if(!crowned || crowned && /^casino|international|russian$/gi.test(Game.version)) {
 	            continuousJump = await AssesMoves({i: m, j: n, state});
 				continuousJump = continuousJump.captures;
 				if(continuousJump.length == 0 && crowned) {
@@ -176,13 +176,13 @@ class AI {
         let pieces = this[color].slice(-1)[0][1];
         
         if(crowned) {
-        	value += /american/gi.test(Game.version)? 10: /kenyan|casino/gi.test(Game.version)? 15: 20;
+        	value += /american/gi.test(Game.version)? 10: /casino/gi.test(Game.version)? 15: 20;
         } 
         if(id.includes("M") && (i == 0 || i == Game.boardSize-1)) {
         	value -= 2;
         } 
         
-    	if(/american|kenyan|casino/gi.test(Game.version)) {
+    	if(/american|casino/gi.test(Game.version)) {
     		let cornerMove;
 			for(let move of cornerMoves) {
 				if(move[0] == m && move[1] == n && id.includes("K") && /EC|IP/gi.test(state[move[2]][move[3]])) {
@@ -570,9 +570,9 @@ class AI {
             state[parseInt(bestMove.capture.slice(0,1))][parseInt(bestMove.capture.slice(1,2))] = "EC";
             
             moves = [];
-            id = crowned && /^casino|international|nigerian$/gi.test(Game.version)? id.replace("K", "M"): id;
+            id = crowned && /^casino|international$/gi.test(Game.version)? id.replace("K", "M"): id;
             state[m][n] = id;
-            if(!crowned || crowned && /^casino|international|nigerian|russian$/gi.test(Game.version)) {
+            if(!crowned || crowned && /^casino|international|russian$/gi.test(Game.version)) {
                 moves = await AssesMoves({id, i: m, j: n, state});
                 moves = moves.captures;
             } 
@@ -638,7 +638,7 @@ class AI {
         	if(move.capture) {
         		captures.push(move);
         	} 
-        	else if(state[a][b].includes("K") && !/american|kenyan|casino/gi.test(Game.version)) {
+        	else if(state[a][b].includes("K") && !/american|casino/gi.test(Game.version)) {
 				kings.push(move);
 			} 
 			else {

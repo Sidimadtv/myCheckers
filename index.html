@@ -56,7 +56,7 @@
         </article>
         <article id="chat-icon" hidden>
             <section class="chat_icon_container">
-                <p id="dragItem">Start a CHAT</p>
+                <p style="font-family: 'Chakra Petch', sans-serif;" id="dragItem">CHAT Now</p>
                 <span class="state_container">
 	                <span class="typing_dot"></span>
 	                <span class="typing_dot"></span>
@@ -141,7 +141,7 @@
                                 <div></div>
                                 <h2 style="text-decoration: #a00 underline;font-family: 'Chakra Petch', sans-serif !important;">CASINO<br/>CHECKERS</h2>
                             </div>
-                            <div style="text-decoration: #a00 underline;font-family: 'Chakra Petch', sans-serif;"  class="version" onclick="Version(this, 3)" value="international">
+                            <div style="text-decoration: #a00 underline;font-family: 'Chakra Petch', sans-serif !important;"  class="version" onclick="Version(this, 3)" value="international">
                                 <div></div>
                                 <h2 style="text-decoration: #a00 underline;font-family: 'Chakra Petch', sans-serif !important;">INTERNATIONAL<br/>CHECKERS</h2>
                             </div>
@@ -171,14 +171,14 @@
                 <div style="font-family: 'Chakra Petch', sans-serif;border-radius: 5px;border: 2px solid #a00;" onclick="Mode(3)" value="two-player-online">TWO PLAYERS<br/> ONLINE</div>
                 <div style="font-family: 'Chakra Petch', sans-serif;border-radius: 5px;border: 2px solid #a00;" onclick="Settings(this)" value="settings">SETTINGS</div>
             </section>
-            <section class="item" id="levels">
+            <section style="font-family: 'Chakra Petch', sans-serif !important" class="item" id="levels">
                 <h2>BEGINNER LEVEL</h2>
                 <nav id="nav">
                     <div style="font-family: 'Chakra Petch', sans-serif;border-radius: 5px;border: 2px solid #a00;" onclick="Level(this, 0)" class="default" value="beginner"><p>BEGINNER<br/>LEVEL</p><p>
                                                                  <label></label>
                                                                  <label></label>
                                                                  <label></label></p></div>
-                    <div style="font-family: 'Chakra Petch', sans-serif;border-radius: 5px;border: 2px solid #a00;" onclick="Level(this, 1)" value="locked"><p>LOCKED</p><p>
+                    <div style="font-family: 'Chakra Petch', sans-serif !important;border-radius: 5px;border: 2px solid #a00;" onclick="Level(this, 1)" value="locked"><p>LOCKED</p><p>
                                                                  <label></label>
                                                                  <label></label>
                                                                  <label></label></p></div> <!--EASY-->
@@ -213,8 +213,8 @@
                 </nav>
             </section>
             <section class="item footer_section" id="footer">
-                <button style="font-family: 'Chakra Petch', sans-serif;border-radius: 15px;border: 2px solid #a00;font-size:26px;" class="left_btn" onclick="Clicked(), play()">PLaY Now</button>
-                <button style="font-family: 'Chakra Petch', sans-serif;border-radius: 15px;border: 2px solid #a00;font-size:22px;" class="right_btn" onclick="Clicked(), GetGames()">All Played GAMES</button>
+                <button style="font-family: 'Chakra Petch', sans-serif;border-radius: 15px;border: 2px solid #a00;font-size:24px;" class="left_btn" onclick="Clicked(), play()">PLaY Now</button>
+                <button style="font-family: 'Chakra Petch', sans-serif;border-radius: 15px;border: 2px solid #a00;font-size:20px;" class="right_btn" onclick="Clicked(), GetGames()">All Played GAMES</button>
             </section>
         </article>
         <article id="two-players-window" hidden>
@@ -224,7 +224,7 @@
                     <section class="inner_item" id="playerA">
                         <h2 style="font-family: 'Chakra Petch', sans-serif;border-radius: 5px;border: 2px solid #a00;" class="only_item">PLAYER 1</h2>
                         <input type="text" maxlength="20" name="offline-form" class="field only_item playerA_name" placeholder="Enter your name" onkeyup="Edit(this)" onfocus="ChangeTextBox(true, this)" onblur="ChangeTextBox(false, this)" required>
-                        <p class="span_rows">Play as:<br><span>Choose the preferred color of your pieces</span></p>
+                        <p class="span_rows">Play As:<br><span style="font-family: 'Chakra Petch', sans-serif;border: 2px solid #a00;">Choose the preferred color of your pieces</span></p>
                         <button type="button" onclick="Clicked(this, this.parentNode), PlayAs(this)" value="play-as-white" class="default white">WHITE</button>
                         <button type="button" onclick="Clicked(this, this.parentNode), PlayAs(this)" value="play-as-black" class="black">BLACK</button>
                         <button type="button" onclick="Clicked(this, this.parentNode), PlayAs(this)" value="play-as-alternately" class="only_item">ALTERNATELY</button>
@@ -232,7 +232,7 @@
                     <section class="inner_item" id="playerB">
                         <h2 style="font-family: 'Chakra Petch', sans-serif;border-radius: 5px;border: 2px solid #a00;" class="only_item">PLAYER 2</h2>
                         <input type="text" maxlength="20" name="offline-form" class="field only_item playerB_name" placeholder="Enter your name" onkeyup="Edit(this)" onfocus="ChangeTextBox(true, this)" onblur="ChangeTextBox(false, this)" required>
-                        <p class="span_rows">Play as:<br><span>Your pieces color will be as indicated here</span></p>
+                        <p class="span_rows">Play as:<br><span style="font-family: 'Chakra Petch', sans-serif;border: 2px solid #a00;">Your pieces color will be as indicated here</span></p>
                         <button style="font-family: 'Chakra Petch', sans-serif;border-radius: 5px;border: 2px solid #a00;" type="button" class="white">WHITE</button>
                         <button style="font-family: 'Chakra Petch', sans-serif;border-radius: 5px;border: 2px solid #a00;" type="button" class="default black">BLACK</button>
                     </section>

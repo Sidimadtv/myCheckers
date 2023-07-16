@@ -4,6 +4,7 @@ html {
 html, body {
     margin: 0;
     padding: 0;
+	font-family: 'Chakra Petch', sans-serif;
 } 
 body {
     position: relative;
@@ -98,6 +99,7 @@ body {
    	 font-size: 1.5rem;
    	 font-weight: 900;
    	 padding-left: 10px;
+	font-family: 'Chakra Petch', sans-serif;
 } 
 
 .install_body {
@@ -113,6 +115,7 @@ body {
     outline: none;
     border-radius: 8px;
     font-weight: 500;
+	font-family: 'Chakra Petch', sans-serif;
 } 
 
 .install_btn:first-of-type {
@@ -149,7 +152,7 @@ body {
     background-position: center;
     background-size: 100% 100%, auto 100vh;
     background-repeat: no-repeat, repeat-x;
-    
+    font-family: 'Chakra Petch', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,6 +202,7 @@ body {
     text-shadow: 0 2px 0 #000a, 0 4px 3px #0008;
     filter: brightness(110%);
     box-shadow: 0 2px 2px 2px #0006, 0 10px 2px 1px #0006;
+	font-family: 'Chakra Petch', sans-serif;
 } 
 
 #load-window .loader {

@@ -240,25 +240,26 @@
                 </form>
                 <form id="online" class="form">
                     <section class="inner_item">
-                        <h2 class="only_item">CHANNEL STATUS DETAILS</h2>
-                        <p>Status:<br><span  style="font-weight: 500;font-family: 'Chakra Petch', sans-serif;text-decoration: #a00 underline;">Your current connection status to the channel</span></p>
-                        <label class="only_item orange_ui" id="connectivity">NOT CONNECTED</label>
-                        <p>You Are:<br><span  style="font-weight: 500;font-family: 'Chakra Petch', sans-serif;text-decoration: #a00 underline;">Your current internet connection status</span></p>
-                        <label class="default only_item" id="player-1-status" value="online">ONLINE</label>
-                        <p>Opponent:<br><span  style="font-weight: 500;font-family: 'Chakra Petch', sans-serif;text-decoration: #a00 underline;">Opponent's current connection status to the channel</span></p>
-                        <label class="only_item black_ui" id="player-2-status" value="N/A">N/A</label>
+                        <h2 style="font-family: 'Chakra Petch', sans-serif;border-radius: 5px;border: 2px solid #a00;" class="only_item">CHANNEL STATUS DETAILS</h2>
+                        <p style="font-family: 'Chakra Petch', sans-serif;">Status:<br><span  style="font-weight: 500;font-family: 'Chakra Petch', sans-serif;text-decoration: #a00 underline;">Your current connection status to the channel</span></p>
+                        <label style="font-family: 'Chakra Petch', sans-serif;" class="only_item orange_ui" id="connectivity">NOT CONNECTED</label>
+                        <p style="font-family: 'Chakra Petch', sans-serif;">You Are:<br><span  style="font-weight: 500;font-family: 'Chakra Petch', sans-serif;text-decoration: #a00 underline;">Your current internet connection status</span></p>
+                        <label style="font-family: 'Chakra Petch', sans-serif;" class="default only_item" id="player-1-status" value="online">ONLINE</label>
+                        <p style="font-family: 'Chakra Petch', sans-serif;">Opponent:<br><span  style="font-weight: 500;font-family: 'Chakra Petch', sans-serif;text-decoration: #a00 underline;">Opponent's current connection status to the channel</span></p>
+               
+                        <label style="font-family: 'Chakra Petch', sans-serif;" class="only_item black_ui" id="player-2-status" value="N/A">N/A</label>
                     </section>
                     <section class="inner_item">
-                        <h2 class="only_item">CHANNEL DETAILS</h2>
+                        <h2 style="font-family: 'Chakra Petch', sans-serif;border-radius: 5px;border: 2px solid #a00;" class="only_item">CHANNEL DETAILS</h2>
                         <input type="text" id="channel-name" name="online-form" class="field only_item" placeholder="Enter name of the channel" onkeyup="Edit(this, true)" onfocus="ChangeTextBox(true, this)" onblur="ChangeTextBox(false, this)" required>
-                        <p>Channel Joined:<br><span  style="font-weight: 500;font-family: 'Chakra Petch', sans-serif;text-decoration: #a00 underline;">The name of the channel you are connected to</span></p>
+                        <p style="font-family: 'Chakra Petch', sans-serif;">Channel Joined:<br><span  style="font-weight: 500;font-family: 'Chakra Petch', sans-serif;text-decoration: #a00 underline;">The name of the channel you are connected to</span></p>
                         <label class="only_item lobby_name black_ui">N/A</label>
-                        <p>Leave Channel:<br><span  style="font-weight: 500;font-family: 'Chakra Petch', sans-serif;text-decoration: #a00 underline;">Leave the channel you are connected to</span></p>
-                        <button type="button" class="only_item red_ui" onclick="Clicked(), Unsubscribe()">LEAVE</button>
-                        <p>Share Channel:<br><span  style="font-weight: 500;font-family: 'Chakra Petch', sans-serif;text-decoration: #a00 underline;">Invite your friends to this channel</span></p>
-                        <button type="button" class="only_item blue_ui" onclick="Clicked(), Share(this)">SHARE</button>
-                        <p>Read FAQS:<br><span  style="font-weight: 500;font-family: 'Chakra Petch', sans-serif;text-decoration: #a00 underline;">Get more light about channel connection and online gaming.</span></p>
-                        <button type="button" class="only_item blue_ui" onclick="Clicked(), AboutOnline()">FAQS</button>
+                        <p style="font-family: 'Chakra Petch', sans-serif;">Leave Channel:<br><span  style="font-weight: 500;font-family: 'Chakra Petch', sans-serif;text-decoration: #a00 underline;">Leave the channel you are connected to</span></p>
+                        <button style="font-family: 'Chakra Petch', sans-serif;" type="button" class="only_item red_ui" onclick="Clicked(), Unsubscribe()">LEAVE</button>
+                        <p style="font-family: 'Chakra Petch', sans-serif;">Share Channel:<br><span  style="font-weight: 500;font-family: 'Chakra Petch', sans-serif;text-decoration: #a00 underline;">Invite your friends to this channel</span></p>
+                        <button style="font-family: 'Chakra Petch', sans-serif;" type="button" class="only_item blue_ui" onclick="Clicked(), Share(this)">SHARE</button>
+                        <p style="font-family: 'Chakra Petch', sans-serif;">Read FAQS:<br><span  style="font-weight: 500;font-family: 'Chakra Petch', sans-serif;text-decoration: #a00 underline;">Get more light about channel connection and online gaming.</span></p>
+                        <button style="font-family: 'Chakra Petch', sans-serif;" type="button" class="only_item blue_ui" onclick="Clicked(), AboutOnline()">FAQS</button>
                     </section>
                     <section class="inner_item">
                         <h2 class="only_item">PLAYER DETAILS</h2>
@@ -373,7 +374,7 @@
             
 		 
 		    <section style="font-family: 'Chakra Petch', sans-serif !important;" class="inner_item" id="item0">
-            		<p>Fullscreen:<br><span>Choose whether to enter Fullscreen</span></p>
+            		<p>Fullscreen:<br><span  style="font-weight: 500;font-family: 'Chakra Petch', sans-serif;text-decoration: #a00 underline;">Choose whether to enter Fullscreen</span></p>
                     <button id="fs-on" onclick="Fullscreen(true)">ON</button>
                     <button id="fs-off" onclick="Fullscreen(false)" class="default">OFF</button>
                 </section>

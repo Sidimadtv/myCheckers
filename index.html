@@ -164,14 +164,14 @@
                     </div>
                 </div>
             </section>
-            <section class="item" id="main">
+            <section style="font-family: 'Chakra Petch', sans-serif !important;" class="item" id="main">
                 <h2>SINGLE PLAYER</h2>
                 <div style="font-family: 'Chakra Petch', sans-serif;border-radius: 5px;border: 2px solid #a00;" onclick="Mode(1)" class="default" value="single-player">SINGLE PLAYER</div>
                 <div style="font-family: 'Chakra Petch', sans-serif;border-radius: 5px;border: 2px solid #a00;" onclick="Mode(2)" value="two-player-offline">TWO PLAYERS<br/> OFFLINE</div>
                 <div style="font-family: 'Chakra Petch', sans-serif;border-radius: 5px;border: 2px solid #a00;" onclick="Mode(3)" value="two-player-online">TWO PLAYERS<br/> ONLINE</div>
                 <div style="font-family: 'Chakra Petch', sans-serif;border-radius: 5px;border: 2px solid #a00;" onclick="Settings(this)" value="settings">SETTINGS</div>
             </section>
-            <section style="font-family: 'Chakra Petch', sans-serif !important" class="item" id="levels">
+            <section style="font-family: 'Chakra Petch', sans-serif !important;" class="item" id="levels">
                 <h2 style="font-family: 'Chakra Petch', sans-serif;">BEGINNER LEVEL</h2>
                 <nav style="font-family: 'Chakra Petch', sans-serif !important;" id="nav">
                     <div style="font-family: 'Chakra Petch', sans-serif;border-radius: 5px;border: 2px solid #a00;" onclick="Level(this, 0)" class="default" value="beginner"><p>BEGINNER<br/>LEVEL</p><p>
@@ -369,25 +369,25 @@
         </article>
         <article id="settings-window" hidden>
             <h2 style="font-family: 'Chakra Petch', sans-serif;border-radius: 5px;border: 2px solid #a00;">SETTINGS</h2>
-            <section id="main-section">
+            <section style="font-family: 'Chakra Petch', sans-serif !important;" id="main-section">
             
 		 
-		    <section class="inner_item" id="item0">
+		    <section style="font-family: 'Chakra Petch', sans-serif !important;" class="inner_item" id="item0">
             		<p>Fullscreen:<br><span>Choose whether to enter Fullscreen</span></p>
                     <button id="fs-on" onclick="Fullscreen(true)">ON</button>
                     <button id="fs-off" onclick="Fullscreen(false)" class="default">OFF</button>
                 </section>
-                <section class="inner_item" id="item1" hidden>
+                <section style="font-family: 'Chakra Petch', sans-serif !important;" class="inner_item" id="item1" hidden>
                     <p>View:<br><span>Choose your preferred orientation</span></p>
                     <button id="horiz" onclick="Clicked(this, this.parentNode)">HORIZ.</button>
                     <button id="vert" onclick="Clicked(this, this.parentNode)" class="default">VERT.</button>
                 </section>
-                <section class="inner_item" id="item2">
+                <section style="font-family: 'Chakra Petch', sans-serif !important;" class="inner_item" id="item2">
                     <p>Sound:<br><span>Choose whether to mute sound</span></p>
                     <button id="unmute" onclick="Mute(false), Clicked(this, this.parentNode)" class="default">ON</button>
                     <button id="mute" onclick="Mute(true), Clicked(this, this.parentNode)">OFF</button>
                 </section>
-                <section class="inner_item three_items" id="item3">
+                <section style="font-family: 'Chakra Petch', sans-serif !important;" class="inner_item three_items" id="item3">
                     <p>First Move:<br><span>Choose who should make the first move</span></p>
                     <button id="first-move-white" onclick="Clicked(this, this.parentNode)">WHITE</button>
                     <button id="first-move-black" onclick="Clicked(this, this.parentNode)" class="default">BLACK</button>

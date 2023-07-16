@@ -1,7 +1,7 @@
 {
     "short_name": "Checkers",
-    "name": "Checkers | Draughts",
-    "description": "Checkers or Draughts game for friends and family. Play online, offline or versus the computer.",
+    "name": "Checkers",
+    "description": "Checkers  for friends and family. Play online, offline or versus the computer.",
     "icons": [
         {
             "src": "./src/images/homescreen 48icon.png",

@@ -3,12 +3,10 @@ const version = "550";
 const cacheName = "Checkers-v:" + version;
 const appShellFiles = [
     "./src/images/american flag.jpeg",
-    "./src/images/kenyan flag.jpeg",
     "./src/images/casino flag.jpeg", 
     "./src/images/international flags.jpeg",
     "./src/images/pool flag.jpeg",
     "./src/images/russian flag.jpeg",
-    "./src/images/nigerian flag.jpeg",
     "./src/images/background1.jpeg", 
     "./src/images/background2.jpeg", 
     "./src/images/background3.jpeg", 

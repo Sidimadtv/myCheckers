@@ -259,7 +259,7 @@ window.addEventListener("beforeinstallprompt", (e) => {
 window.addEventListener("error", (error) => {
 	event.preventDefault();
 	console.log(error.message + " \n\tat " + error.filename + ": " + error.lineno + ":" + error.colno);
-	let option = confirm("ERROR MESSAGE\n\nThere was an unexpected error. We recommend you refresh the page. If this error persists even after refreshing, please contact via:\n\nTel: +254 798 916984\nWhatsApp: +254 798 916984\nEmail: markcodes789@gmail.com\n\nPress OK to refresh.");
+	let option = confirm("ERROR MESSAGE\n\nThere was an unexpected error. We recommend you refresh the page. If this error persists even after refreshing, please contact me:\n\nVia Email\n\nPress OK to refresh.");
 	if(option) 
 		location.reload();
 });

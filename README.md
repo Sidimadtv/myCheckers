@@ -1,5 +1,5 @@
 # Checkers
-Gaming application.
+Gaming application.Play it Now
 #
 https://sidimad-checkers.netlify.app/
 #
